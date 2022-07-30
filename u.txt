@@ -1,0 +1,25 @@
+//Unique numbers
+
+Write a program to find the count of numbers which consist of unique digits
+
+Input: Input consist of two Integer lower and upper value of an range
+Output: it consists of single line print the count of unique digits in given range. else print "No unique number"
+
+S/I : 10  15
+S/O : 5
+
+//code:
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int m,n,count=0,i;
+    scanf("%d %d",&m,&n);
+    for(i=m;i<=n;i++)
+    {
+        if(i%10 != i/10)
+        count++;
+    }
+    printf("%d",count);
+}
